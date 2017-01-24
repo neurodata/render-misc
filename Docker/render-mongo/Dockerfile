@@ -56,10 +56,10 @@ ENV PATH $JAVA_HOME/bin:$PATH
 ENV JAVA $JAVA_HOME/bin/java
 
 # small 4GB server: 
-ENV JAVA_OPTIONS="-Xms3g -Xmx3g -server -Djava.awt.headless=true"
+#ENV JAVA_OPTIONS="-Xms3g -Xmx3g -server -Djava.awt.headless=true"
 
 # larger 16GB server
-#ENV JAVA_OPTIONS="-Xms15g -Xmx15g -server -Djava.awt.headless=true"
+ENV JAVA_OPTIONS="-Xms15g -Xmx15g -server -Djava.awt.headless=true"
 
 # super 500GB server
 #ENV JAVA_OPTIONS="-Xms400g -Xmx400g -server -Djava.awt.headless=true"
